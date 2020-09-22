@@ -61,10 +61,16 @@ while 1 :
             print(k)
 
     elif n==str(8):
+            #Version 1 :
         k = "1 2 3 4 5 6 7"
         for i in range(7):
             print(k)
             k = k[0:-2]
+            #Version 2 :
+        for i in range(7):
+            for j in range(7 - i):
+                print(j + 1, end=" ")
+            print()
     else :
         print('End')
         break
