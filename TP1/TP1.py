@@ -19,7 +19,7 @@ while 1 :
 
     elif n==str(4):
         print("4. Volume d'un parallélépipède rectangle : ")
-        def Volume(l: float, h: float, p: float):
+        def volume(l: float, h: float, p: float):
             """
             Calcule le volume d'un parallelepipede rectangle
             :param l: Largeur
@@ -31,7 +31,7 @@ while 1 :
         l=float(input('Largeur = '))
         h=float(input('Hauteur = '))
         p=float(input('Profondeur = '))
-        print(Volume(l, h, p))
+        print(volume(l, h, p))
 
     elif n==str(5):
         def date(s: int):
@@ -61,10 +61,10 @@ while 1 :
             print(k)
 
     elif n==str(8):
-        k = "1 2 3 4 5 6 7"
         for i in range(7):
-            print(k)
-            k = k[0:-2]
+            for j in range(7-i):
+                print(j+1,end =" ")
+            print("")
     else :
         print('End')
         break
