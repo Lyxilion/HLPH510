@@ -20,6 +20,7 @@ while 1:
     elif n == str(4):
         print("4. Volume d'un parallélépipède rectangle : ")
 
+
         def volume(l: float, h: float, p: float):
             """
             Calcule le volume d'un parallelepipede rectangle
@@ -29,6 +30,8 @@ while 1:
             :return: volume
             """
             return l * h * p
+
+
         x = float(input('Largeur = '))
         y = float(input('Hauteur = '))
         z = float(input('Profondeur = '))
@@ -48,6 +51,8 @@ while 1:
             m = s // 60
             s = s % 60
             print(str(j) + ' jour(s) ' + str(h) + ' heure(s) ' + str(m) + ' minutes ' + str(s) + ' seconde(s)')
+
+
         s = int(input("Nombre de seconde :"))
         date(s)
     elif n == str(6):
@@ -63,8 +68,8 @@ while 1:
 
     elif n == str(8):
         for i in range(7):
-            for j in range(7-i):
-                print(j+1, end=" ")
+            for j in range(7 - i):
+                print(j + 1, end=" ")
             print("")
     else:
         print('End')

@@ -1,6 +1,6 @@
-while 1 :
-    n=input("\n Quelle question ? (1-4)\n")
-    if n==str(1):
+while 1:
+    m = input("\n Quelle question ? (1-4)\n")
+    if m == str(1):
         def ligne_car(n: int, ca: str):
             """
                 Repete , fois le char ca
@@ -13,20 +13,21 @@ while 1 :
 
         ligne_car(3, "a")
 
-    elif n==str(2):
+    elif m == str(2):
         from math import pi
-        def surf_cercle(R: float):
+
+
+        def surf_cercle(r: float):
             """
                 Donne le surface d'un cercle
-            :param R: rayon du cercle
+            :param r: rayon du cercle
             :return: la surface
             """
-            return pi * R ** 2
+            return pi * r ** 2
 
-        a = surf_cercle(2.5)
-        print("la surface vaut", a)
+        print("la surface vaut", surf_cercle(2.5))
 
-    elif n==str(3):
+    elif m == str(3):
         def vol_boite(x1: float, x2: float, x3: float):
             """
                 Donne le volume d'une boite
@@ -39,23 +40,25 @@ while 1 :
 
         print(vol_boite(5.2, 7.7, 3.3))
 
-    elif n==str(4):
-        def index_max(L: list):
+    elif m == str(4):
+        def index_max(tab: list):
             """
                 Donne l'index du maximum d'une liste
-            :param L: une liste
+            :param tab: une liste
             :return: l'index du maximum
             """
-            max = 0
-            for i, e in enumerate(L):
-                if e >= max:
-                    max = i
-            return max
+            maxi = tab[0]
+            index = 0
+            for i, e in enumerate(tab):
+                if e >= maxi:
+                    index = i
+                    maxi = e
+            return index
 
-        serie = [5, 8, 2, 1, 9, 3, 6, 7, 9, 3]
-        i = index_max(serie)
-        print("Résultat :", i)
+        serie = [1, 1, 1, 1, 1, 1, 1, 1, 2, 3]
+        index_max(serie)
+        print("Résultat :", index_max(serie))
 
-    else :
+    else:
         print('end')
         break
