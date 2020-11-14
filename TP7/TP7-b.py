@@ -10,9 +10,6 @@ line, = plt.plot([], [])
 plt.xlim(-3, 13)
 plt.ylim(-1, 1.5)
 
-# fonction à définir quand blit=True
-# crée l'arrière de l'animation qui sera présent sur chaque image
-
 
 def animate(i):
     t = i * dt
