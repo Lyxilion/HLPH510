@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
-import numpy as np
 import matplotlib.animation as animation
+import numpy as np
 
 x = np.linspace(-3, 13, 161)
 dt = 0.1
