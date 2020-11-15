@@ -32,7 +32,7 @@ for i in range(n):
 
     if i % 100 == 99:  # On rafraichi l'animation que tout les 100 points
         pi_aprox = nc / i * 4  # Calcule de Pi
-        print("Aproximation après {} iterations : {}".format(i+1, pi_aprox))
+        print("Aproximation après {} iterations : {}".format(i + 1, pi_aprox))
         plt.pause(0.01)
 
 print("Nombre de points total : ", n)
