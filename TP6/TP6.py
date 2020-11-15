@@ -15,15 +15,9 @@ x_k = x_p
 y_k = y_p
 for i in range(50):
     rnd = np.random.randint(1, 4)  # Tirage d'un entier aléatoire entre 1 et 3
-    if rnd == 1:  # Calcule des coordonnées du nouveau point
-        x_k = (x_k + x[0]) / 2
-        y_k = (y_k + y[0]) / 2
-    elif rnd == 2:
-        x_k = (x_k + x[1]) / 2
-        y_k = (y_k + y[1]) / 2
-    else:
-        x_k = (x_k + x[2]) / 2
-        y_k = (y_k + y[2]) / 2
+    # Calcule des coordonnées du nouveau point
+    x_k = (x_k + x[rnd-1]) / 2
+    y_k = (y_k + y[rnd-1]) / 2
     plt.scatter(x_k, y_k, marker=".", c='green')  # Tracé du point
     plt.pause(0.01)
 plt.show()
