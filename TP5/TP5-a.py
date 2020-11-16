@@ -1,6 +1,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
+""" Points aléatoires sur toutes la surface du carré """
+
 n = 1000  # Nombre de point a tirer
 nc = 0  # Nombre de point dans le cercle
 a = 1.25  # Côté du carré

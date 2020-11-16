@@ -4,18 +4,18 @@ import matplotlib.pyplot as plt
 x = np.linspace(-3, 3, 101)
 z = 5*np.exp(-2j*x*np.pi)*np.exp(-x**2)
 
-X = np.array([x,x])
+X = np.array([x, x])
 
 y0 = np.zeros(len(x))
 y = np.abs(z)
-Y = np.array([y0,y])
+Y = np.array([y0, y])
 
-Z = np.array([z,z])
+Z = np.array([z, z])
 C = np.angle(Z)
 
 # Affichages des informations du graph
-plt.rcParams.update({'mathtext.default': 'regular' })  # Activer la synthax LateX
-plt.title("y = $e^{-i2 \pi x}  e^{-x^{2}}$")
+plt.rcParams.update({'mathtext.default': 'regular'})  # Activer la syntax LateX
+plt.title("$y = e^{-i2 \pi x}  e^{-x^{2}}$")
 plt.xlabel("x")
 plt.ylabel("Module de y")
 

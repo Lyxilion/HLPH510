@@ -5,12 +5,12 @@ import numpy as np
 np.seterr(divide='ignore', invalid='ignore')
 
 # Deffinition de la fonction
-f = lambda x : np.sin(x) * np.sqrt(x**2 + 1) / x
+f = lambda k: np.sin(k) * np.sqrt(k**2 + 1) / k
 
 # Calcule des coordonnées
-x= np.linspace(-6,6,121)
+x = np.linspace(-6, 6, 121)
 y = f(x)
 
 # Affichage de la courbe
-plt.plot(x,y)
+plt.plot(x, y)
 plt.show()
