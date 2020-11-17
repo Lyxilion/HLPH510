@@ -32,7 +32,7 @@ for i in range(n):
     else:
         plt.scatter(coords[0], coords[1], marker=".", c='red')  # si il est aps dans le cercle rouge
 
-    if i % 100 == 99:  # On rafraichi l'animation que tout les 100 points
+    if i % 100 == 99:  # On rafraichi l'animation que tout les 100 points (le for commence à l'indice 0)
         pi_aprox = nc / i * 4  # Calcule de Pi
         print("Aproximation après {} iterations : {}".format(i + 1, pi_aprox))
         plt.pause(0.01)
