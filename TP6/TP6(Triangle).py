@@ -11,7 +11,7 @@ y_p = 0.5
 plt.plot(x, y)  # tracé du triangle et de P
 plt.scatter(x_p, y_p, marker="o", c='red')
 
-for i in range(10):
+for i in range(100):
     rnd = np.random.randint(0, 3)  # Tirage d'un entier aléatoire entre 1 et 3
     # Calcule des coordonnées du nouveau point
     x_p = (x_p + x[rnd]) / 2
