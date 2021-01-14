@@ -8,7 +8,8 @@ np.seterr(divide='ignore', invalid='ignore')
 f = lambda k: np.sin(k) * np.sqrt(k**2 + 1) / k         #CHANGER ICI
 
 # Calcule des coordonnées
-x = np.linspace(-6, 6, 121)                             #CHANGER ICI
+x = np.linspace(-6, 6, 121)
+x = x + np.finfo(float).eps
 y = f(x)
 
 # Affichage de la courbe
